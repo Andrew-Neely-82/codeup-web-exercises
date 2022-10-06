@@ -67,8 +67,7 @@ let premiumOffer = confirm('Press OK if Premium Member.');
 
 if ((userOffer > 2 || premiumOffer) && expiredOffer) {
     alert('Offer can be applied.')
-}
-else alert('Offer can not be applied');
+} else alert('Offer can not be applied');
 
 
 
