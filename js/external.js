@@ -3,11 +3,11 @@
 console.log("Hello from external JavaScript");
 alert("Welcome to my Website!");
 
-let favoriteColor = prompt("What is your favorite color?");
-
-
-if (favoriteColor !== "red" || favoriteColor !== "Red"); {
-    alert(favoriteColor + " is mine too!");
+let favoriteColor = prompt("What is your favorite color?"); {
+    if (favoriteColor !== "red" || favoriteColor !== "Red") ;
+    {
+        alert(favoriteColor + " is mine too!");
+    }
 }
 
 
@@ -35,7 +35,7 @@ const googlePerHour = 400
 const amazonPerHour = 380
 const facebookPerHour = 350
 let googleHoursWorked = prompt("How many hours have you worked at Google");
-let amazonHoursWorked = prompt("How many hours have you worked Amzazon");
+let amazonHoursWorked = prompt("How many hours have you worked Amazon");
 let facebookHoursWorked = prompt("How many hours have you worked Facebook");
 
 let totalPay = (googlePerHour * googleHoursWorked) + (amazonPerHour * amazonHoursWorked) + (facebookPerHour * facebookHoursWorked);
