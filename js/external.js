@@ -1,15 +1,12 @@
 "use strict";
 
 console.log("Hello from external JavaScript");
+
 alert("Welcome to my Website!");
 
-let favoriteColor = prompt("What is your favorite color?"); {
-    if (favoriteColor !== "red" || favoriteColor !== "Red") ;
-    {
-        alert(favoriteColor + " is mine too!");
-    }
-}
+let favoriteColor = prompt("What is your favorite color?");
 
+alert(favoriteColor + " is mine too!");
 
 // Question 3
 
