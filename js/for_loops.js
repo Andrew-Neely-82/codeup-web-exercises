@@ -8,9 +8,9 @@ function showMultiplicationTable(x) {
     }
 }
 
-console.log(`For Loop Exercise 1`);
+console.log(`============ For Loop Exercise 1 ============`); console.log(``);
 showMultiplicationTable(11);
-console.log(``);
+console.log(``); console.log(``);
 
 
 
@@ -33,9 +33,9 @@ function isEvenOddTable() {
     }
 }
 
-console.log(`For Loop Exercise 2`);
+console.log(`============ For Loop Exercise 2 ============`); console.log(``);
 isEvenOddTable();
-console.log(``);
+console.log(``); console.log(``);
 
 
 
@@ -50,9 +50,9 @@ function pyramidNumbers() {
     }
 }
 
-console.log(`For Loop Exercise 3`);
+console.log(`============ For Loop Exercise 3 ============`); console.log(``);
 pyramidNumbers();
-console.log(``);
+console.log(``); console.log(``);
 
 
 
@@ -66,6 +66,6 @@ function reverseLoop() {
     }
 }
 
-console.log(`For Loop Exercise 4`);
+console.log(`============ For Loop Exercise 4 ============`); console.log(``);
 reverseLoop();
-console.log(``);
+console.log(``); console.log(``);

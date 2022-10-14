@@ -25,6 +25,6 @@ function skipOddNumbersAnd27(){
     }
 }
 
-console.log(`Break and Continue - Exercise 1`);
+console.log(`============ Break and Continue - Exercise 1 ============`); console.log(``);
 skipOddNumbersAnd27();
-console.log(``);
+console.log(``); console.log(``);

@@ -8,9 +8,9 @@ function powerOf2() {
     }
 }
 
-console.log(`While Loop Exercise 1`);
+console.log(`============ While Loop Exercise 1 ============`); console.log(``);
 powerOf2();
-console.log(``);
+console.log(``); console.log(``);
 
 
 // TODO Q1 --- DO WHILE ---
@@ -31,5 +31,5 @@ function iceCreamCones(){
     console.log(`Yay! I sold them all!`)
 }
 
-console.log(`Do While Exercise 1`);
+console.log(`============ Do While Exercise 1 ============`); console.log(``);
 iceCreamCones();
