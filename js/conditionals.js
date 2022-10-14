@@ -208,6 +208,8 @@ let priceAfter = calculateTotal(luckyNumber, bill);
 
 alert("Your lucky number is " + luckyNumber + " Price before discount is " + bill + " and price after is " + priceAfter);
 
+
+
 /**
  * TODO: Q7
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
