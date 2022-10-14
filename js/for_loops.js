@@ -4,28 +4,35 @@
 
 function showMultiplicationTable(x) {
     for (let i = 1; i < 11; i++) {
-        console.log(`7 * ${i} = ` + (i * x));
+        console.log(`${i} * ${x} = ` + (i * x));
     }
 }
 
 console.log(`For Loop Exercise 1`);
-showMultiplicationTable(7);
+showMultiplicationTable(11);
 console.log(``);
 
 
 
 // TODO Q2
 
+
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+}
+
 function isEvenOddTable() {
-    for (let x = 20; x <= 30; x++) {
-        if (x % 2 === 0) {
-            console.log(x + " is even");
+    for (let x = 1; x <= 10; x++) {
+        let randomNumber = randomNum(20, 200);
+        if (randomNumber % 2 === 0) {
+            console.log(`${randomNumber} is even`);
         }
         else {
-            console.log(x + " is odd");
+            console.log(`${randomNumber} is odd`);
         }
     }
 }
+
 console.log(`For Loop Exercise 2`);
 isEvenOddTable();
 console.log(``);
