@@ -24,7 +24,11 @@
      * string, and <li> tags around each planet.
      */
 
-    console.log(`TODO 2: ${planetsArray.join("<br>")}`);
+    let planetsStringBreak = "Mercury<br>Venus<br>EarthMars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
+    let planetsStringList = "<ul><li>Mercury</li><li>Venus</li><li>Earth</li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>"
+    console.log(`TODO 2.1: ${planetsStringBreak}`);
+    console.log(`TODO 2.2: ${planetsStringList}`);
+
 
 
 })();
