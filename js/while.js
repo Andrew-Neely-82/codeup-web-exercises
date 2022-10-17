@@ -19,7 +19,7 @@ function iceCreamCones() {
     let conesLeft =  Math.floor(Math.random() * 50) + 50;
     do {
         let orderAmount = Math.floor(Math.random() * 5) + 1;
-        if (orderAmount > conesLeft) {
+        if (orderAmount > conesLeft)
             console.log(`There's only ${conesLeft} cones left...`);
         }
         else {
