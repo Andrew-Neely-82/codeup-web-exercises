@@ -6,16 +6,16 @@
 // TODO Q1
 
 function skipOddNumbersAnd27(){
-    let input;
+    let x;
     while (true){
-        input = parseFloat(prompt(`Type a number from 1-50 that is odd`))
-        if (input % 2 !==0 && input >=1 && input <= 50){
+        x = parseFloat(prompt(`Type a number from 1-50 that is odd`))
+        if (x % 2 !==0 && x >=1 && x <= 50){
             break;
         }
     }
     for (let i = 1; i < 50; i++){
-        if (input === i){
-            console.log(`Skipping: ${input}`)
+        if (x === i){
+            console.log(`Yikes, Skipping: ${x}`)
             continue;
         }
         else if (i%2 ===0){

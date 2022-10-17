@@ -17,13 +17,13 @@ console.log(``); console.log(``);
 // TODO Q2
 
 
-function randomNum(min, max) {
+function randomNumberGenerator(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
 function isEvenOddTable() {
     for (let x = 1; x <= 10; x++) {
-        let randomNumber = randomNum(20, 200);
+        let randomNumber = randomNumberGenerator(20, 200);
         if (randomNumber % 2 === 0) {
             console.log(`${randomNumber} is even`);
         }
