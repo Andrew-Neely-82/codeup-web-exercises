@@ -54,6 +54,8 @@
      * and console.log the relevant messages for each person
      */
 
+
+
     let shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
@@ -71,9 +73,6 @@
     });
 
     console.log(``)
-
-
-
 
 
     /** TODO 4:
