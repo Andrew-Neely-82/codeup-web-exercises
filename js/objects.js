@@ -93,31 +93,36 @@
 
     let books = [{
         bookNumber: `book 1`,
-        title: `Something 1`, author: {
+        title: `Something 1`,
+        author: {
             firstName: `Andrew`,
             lastName: `Neely`
         }},
         {
             bookNumber: 2,
-            title: `Something 2`, author: {
+            title: `Something 2`,
+            author: {
                 firstName: `Jacob`,
                 lastName: `Neely`
             }},
         {
             bookNumber: 3,
-            title: `Something 3`,  author: {
+            title: `Something 3`,
+            author: {
                 firstName: `Dustin`,
                 lastName: `Neely`
             }},
         {
             bookNumber: 4,
-            title: `Something 4`,  author: {
+            title: `Something 4`,
+            author: {
                 firstName: `Harold`,
                 lastName: `Neely`
             }},
         {
             bookNumber: 5,
-            title: `Something 5`,  author: {
+            title: `Something 5`,
+            author: {
                 firstName: `Jill`,
                 lastName: `Neely`
             }}
