@@ -16,11 +16,14 @@
 
     let person = {
         firstName: `Andrew`,
-        lastName: `Neely`
+        lastName: `Neely`,
+        sayHello: function () {
+            return `TODO 2: Hello, ${person.firstName} ${person.lastName}`
+        }
     }
 
     console.log(`TODO 1: ${person.firstName} ${person.lastName}`);
-    console.log(``);
+    console.log(``)
 
 
 
@@ -34,14 +37,8 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    person.sayHello = function () {
-        console.log(`TODO 2: Hello ${person.firstName} ${person.lastName}`);
-        console.log(``);
-    };
-
-    person.sayHello();
-
-
+    console.log(person.sayHello());
+    console.log(``);
 
     /** TODO 3:
      * HEB has an offer for the shoppers that buy products amounting to
