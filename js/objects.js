@@ -186,7 +186,7 @@
     console.log(`TODO 5: `)
 
     books.forEach(function(book, x){
-        console.log(`#${x + 1} Title: ${book.title}, Author: by ${book.author.firstName} ${book.author.lastName}`);
+        console.log(`Book #${x + 1} Title: ${book.title}, Author: by ${book.author.firstName} ${book.author.lastName}`);
     })
 
 
@@ -203,18 +203,18 @@
      */
 
 
-    function createBook(title, author) {
-        let book = {
-            title: title, author: author}
-        return book;
-    }
-
-    console.log(createBook());
-
-    function showBookInfo(book) {
-        return `${book.title} by ${book.author.firstName} ${book.author.lastName}`
-    }
-
-    console.log(showBookInfo());
+    // function createBook(title, author) {
+    //     let book = {
+    //         title: title, author: author}
+    //     return book;
+    // }
+    //
+    // console.log(createBook());
+    //
+    // function showBookInfo(book) {
+    //     return `${book.title} by ${book.author.firstName} ${book.author.lastName}`
+    // }
+    //
+    // console.log(showBookInfo());
 
 })();
