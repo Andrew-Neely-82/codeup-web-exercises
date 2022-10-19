@@ -65,10 +65,10 @@
     console.log(`TODO 3: `)
 
     shoppers.forEach(function(shopper) {
-        let discount = shopper.amount * .12.toFixed();
+        let discount = shopper.amount * 0.12;
         let total = shopper.amount - discount;
         if (shopper.amount > 200) {
-            console.log(shopper.name + " spent " + shopper.amount + " and received a discount of " + discount + " for a total of " + total);
+            console.log(`${shopper.name} spent ${shopper.amount} and received a discount of ${discount} for a total of ${total}`);
         }
     });
 
