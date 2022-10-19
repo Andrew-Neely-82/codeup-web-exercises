@@ -6,8 +6,6 @@
 <!--  <link rel="stylesheet" href="style.css">-->
   <style>
     body {
-      display: flex;
-      width: 100%;
       margin: 0;
     }
     header {
@@ -27,14 +25,44 @@
     }
     a {
       font-family: Arial,serif;
-      color: rgba(191, 191, 193);
+      color: white;
       margin: 0 10px;
       cursor: pointer;
+    }
+    a:hover {
+      color: rgba(191, 191, 193);
     }
     .github-icon {
       display: flex;
       filter: invert(100%);
       margin: 0 10px;
+      cursor: pointer;
+    }
+    div {
+      font-family: Arial,serif;
+    }
+    .container-master {
+      display: flex;
+      width: 100%;
+      border: solid 1px rgb(223 221 227);
+      margin: 20px 20px;
+      border-radius: 4px;
+      flex-direction: column;
+    }
+    .container-1 {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      border: solid 1px rgb(223 221 227);
+    }
+    .container-2 {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      border: solid 1px rgb(223 221 227);
+    }
+    .container-links {
+      color: blue;
       cursor: pointer;
     }
   </style>
@@ -53,6 +81,14 @@
       <a>Explore</a>
     </nav>
   </header>
+
+  <div class="container-master">
+      <div class="container-1">Codeup's dev team</div>
+      <div class="container-2"><a class="container-links">Kent Beck</a></div>
+    </div>
+
+
+
 
 </body>
 </html>
