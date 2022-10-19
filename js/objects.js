@@ -68,10 +68,10 @@
         let discount = shopper.amount * 0.12;
         let total = shopper.amount - discount;
         if (shopper.amount > 200) {
-            console.log(`${shopper.name} spent ${shopper.amount} and received a discount of ${discount} for a total of ${total}`);
+           console.log(`${shopper.name} spent ${shopper.amount} and received a discount of ${discount} for a total of ${total}`);
         }
         else {
-            console.log((`Sorry ${shopper.name}, you spent ${shopper.amount} and don't qualify for a discount`));
+            console.log(`Sorry ${shopper.name}, you spent ${shopper.amount} and don't qualify for a discount`);
         }
     });
 
