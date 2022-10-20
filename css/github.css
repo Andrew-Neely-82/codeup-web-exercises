@@ -112,3 +112,11 @@ div {
     align-content: flex-start;
     margin-left: 10px;
 }
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-links {
+    color: blue;
+    cursor: pointer;
+}
