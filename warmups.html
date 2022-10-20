@@ -3,8 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Warmups</title>
+    <style>
+        body {
+            font-family: Arial,serif;
+            background-color: black;
+            color: white;
+            margin: 0 0 0 30px;
+        }
+        .div {
+            height: 250px;
+            width: 250px;
+            border: 1px solid transparent;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .div::before {
+            content: "";
+            height: 150%;
+            width: 150%;
+            position: absolute;
+            background: conic-gradient(
+                    red,
+                    #fe9000,
+                    yellow,
+                    green,
+                    blue,
+                    indigo,
+                    #b102b7,
+                    red
+            );
+            top: -25%;
+            left: -25%;
+            animation: spin 1.5s infinite linear;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .div::after {
+            content: "Warmups";
+            position: absolute;
+            background-color: #1c1b29;
+            height: 93%;
+            width: 93%;
+            top: 3.5%;
+            left: 3.5%;
+            letter-spacing: 6px;
+            display: grid;
+            place-content: center;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="div"></div>
 
 
 <script src="./js/warmups.js"></script>
