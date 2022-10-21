@@ -1,4 +1,33 @@
+body {
+    font-family: Arial, serif;
+    background-color: antiquewhite;
+    background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
 .fancy-header {
     color: purple;
     text-decoration: underline;
+}
+
+ul {
+    list-style: circle;
+}
+td, tr {
+    padding: 2px 10px;
+}
+
+a:hover {
+    cursor: pointer;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+}
+a:visited {
+    color: gray;
+}
+a:active {
+    color: green;
 }
