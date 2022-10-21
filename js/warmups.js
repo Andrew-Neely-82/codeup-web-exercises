@@ -14,19 +14,22 @@
 
 // =====================================================================================================================
 
-// TODO Warmup 2
+// // TODO Warmup 2
+//
+// function longestString(array) {
+//     let longest = '';
+//     array.forEach(function(string) {
+//         if (string.length > longest.length) {
+//             longest = string;
+//         }
+//     });
+//     return console.log(longest);
+// }
+//
+// let array = ['Audi', 'BMW', 'Citroen', 'Dacia', 'Ferrari', 'Mercedes', 'Porsche', 'Volkswagen'];
+//
+// longestString(array);
 
-function longestString(array) {
-    let longest = '';
-    array.forEach(function(string) {
-        if (string.length > longest.length) {
-            longest = string;
-        }
-    });
-    return console.log(longest);
-}
+// =====================================================================================================================
 
-let array = ['Audi', 'BMW', 'Citroen', 'Dacia', 'Ferrari', 'Mercedes', 'Porsche', 'Volkswagen'];
-
-longestString(array);
-
+// TODO Warmup 3
