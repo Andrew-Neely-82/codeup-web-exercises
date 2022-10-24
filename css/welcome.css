@@ -1,7 +1,8 @@
+
+
 body {
-    font-family: Arial, serif;
-    background-color: antiquewhite;
-    background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+    font-family: 'Roboto Flex', sans-serif;
+    background: antiquewhite url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
 }
 
 h1 {
@@ -30,4 +31,16 @@ a:visited {
 }
 a:active {
     color: green;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    /*border-radius: 5px;*/
+    padding: 3px;
+}
+
+table {
+    border: 5px double black;
+    border-radius: 5px;
+    padding: 0;
 }
