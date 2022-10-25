@@ -6,55 +6,49 @@
   <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
-<header>
-  <h1>Veridian Dynamics&#169;</h1>
-  <h3> Register with us </h3>
-</header>
-
-<div class="form-container">
-  <form method="POST" action="https://request-inspector.glitch.me/">
-    <div class="">
-      <label for="email">Username</label>
+  <header>
+    <h1>Veridian Dynamics&#169;</h1>
+    <h3> Register with us </h3>
+  </header>
+  <div class="form-container">
+    <form method="POST" action="https://request-inspector.glitch.me/">
+      <div>
+        <label for="email">Username</label>
         <input type="text" name="email" id="email" placeholder="Email">
-      <br>
-      <label for="password">Password</label>
-        <input id="password" name="password" type="password" placeholder="password">
-      <br>
-      <label for="bio">Bio</label>
-      <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
-      <br>
-      <div class="radio-container">
-        <input type="radio" id="Billboard" name="how" value="billboard">
-        <label for="Billboard">Billboard</label>
-
-        <input type="radio" id="Radio" name="how" value="radio">
-        <label for="Radio">Radio</label>
-
-        <input type="radio" id="Internet" name="how" value="internet">
-        <label for="Internet">Internet</label>
-
-        <input type="radio" id="Other" name="how" value="other">
-        <label for="Other">Other</label>
-      </div>
-      <br>
-    </div>
-    <div class="browser-container">
-      <div>What kind of browser do you use?</div>
         <br>
-      <label for="browser"></label>
-      <select id="browser" name="browser">
-        <option label="Chrome" value="chrome"></option>
-        <option label="Firefox" value="firefox"></option>
-        <option label="Safari" value="safari"></option>
-        <option label="Edge" value="edge"></option>
-        <option label="Other" value="other"></option>
-      </select>
-    </div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="password">
+        <br>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
+        <br>
+        <div class="radio-container">
+          <input type="radio" id="Billboard" name="how" value="billboard">
+          <label for="Billboard">Billboard</label>
+          <input type="radio" id="Radio" name="how" value="radio">
+          <label for="Radio">Radio</label>
+          <input type="radio" id="Internet" name="how" value="internet">
+          <label for="Internet">Internet</label>
+          <input type="radio" id="Other" name="how" value="other">
+          <label for="Other">Other</label>
+        </div>
+        <br>
+      </div>
+      <div class="browser-container">
+        <div>What kind of browser do you use?</div>
+        <br>
+        <label for="browser"></label>
+        <select id="browser" name="browser">
+          <option label="Chrome" value="chrome"></option>
+          <option label="Firefox" value="firefox"></option>
+          <option label="Safari" value="safari"></option>
+          <option label="Edge" value="edge"></option>
+          <option label="Other" value="other"></option>
+        </select>
+      </div>
     <br>
     <input class="input" type="submit" value="Submit">
   </form>
 </div>
-
-
 </body>
 </html>
