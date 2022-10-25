@@ -7,9 +7,12 @@
      * 'names'.
      */
 
+
+
     let names = [`Andrew`, `Bob`, `Carl`, `David`]
     console.log((`TODO 1: let names = [\`Andrew\`, \`Bob\`, \`Carl\`, \`David\`]`));
     console.log((``));
+
 
 
     /**
@@ -18,8 +21,11 @@
      * array.
      */
 
+
+
     console.log(`TODO 2: ${names.length}`);
     console.log((``));
+
 
 
     /**
@@ -28,11 +34,15 @@
      * accessing each element's index.
      */
 
+
+
     console.log(`TODO 3: ${names[0]}`);
     console.log(`TODO 3: ${names[1]}`);
     console.log(`TODO 3: ${names[2]}`);
     console.log(`TODO 3: ${names[3]}`);
     console.log((``));
+
+
 
     /**
      * TODO 4:
@@ -40,10 +50,18 @@
      * array.
      */
 
-    names.forEach(function (names) {
-        console.log(`TODO 4: ${names}`);
-    })
+    // updated to use actual for loop
+
+    // names.forEach(function (names) {
+    //     console.log(`TODO 4: ${names}`);
+    // })
+
+    for (let i = 0; i < names.length; i++) {
+        console.log(`TODO 4: ${names[i]}`);
+    }
+
     console.log((``));
+
 
 
     /**
@@ -51,12 +69,13 @@
      * Refactor your above code to use a `forEach` loop
      */
 
+
+
     names.forEach(function (names){
-        {
             console.log(`TODO 5: ${names}`);
-        }
     })
     console.log((``));
+
 
 
     /**
@@ -73,18 +92,28 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+
+
     function firstName(x){
         console.log(`TODO 6: ${x[0]}`);
     }
     function secondName(x){
         console.log(`TODO 6: ${x[1]}`);
     }
-    function lastName(x){
-        console.log(`TODO 6: ${x[3]}`);
+    // function lastName(x){
+    //     console.log(`TODO 6: ${x[3]}`);
+    // }
+
+    // realized I did this wrong on review
+
+    function lastName(x) {
+        return console.log(`TODO 6: ${x[x.length - 1]}`)
     }
 
     firstName(names);
     secondName(names);
     lastName(names);
+
+
 
 })();
