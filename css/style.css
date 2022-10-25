@@ -15,6 +15,11 @@ h1 {
     text-decoration: underline;
 }
 
+.header-paragraph {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     list-style: circle;
 }
