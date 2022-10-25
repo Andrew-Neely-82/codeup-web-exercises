@@ -2,9 +2,7 @@
 
 // IIFE before push to GitHub
 
-// (function(){
-
-/* ########################################################################## */
+(function(){
 
 /**
  * TODO: Q1
@@ -62,6 +60,7 @@ console.log(analyzeColor("green"));
 console.log(analyzeColor("blue"));
 console.log(analyzeColor("indigo"));
 console.log(analyzeColor("violet"));
+console.log(``)
 
 
 
@@ -84,10 +83,11 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 
 
-//console.log(analyzeColor(randomColor));
+console.log(`Q2: ${analyzeColor(randomColor)}`);
+console.log(``);
 
 
-/**
+    /**
  * TODO: Q3
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
@@ -120,8 +120,9 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
          break;
  }
 
+    console.log(``);
 
-/**
+    /**
  * TODO: Q4
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
@@ -133,9 +134,6 @@ let userColor = prompt("Choose a color: red, orange, yellow, green, blue, indigo
 
 alert(analyzeColor(userColor));
 
-
-
-/* ########################################################################## */
 
 /**
  * TODO: Q5
@@ -189,11 +187,12 @@ calculateTotal(2, 100);
 calculateTotal(3, 100);
 calculateTotal(4, 100);
 calculateTotal(5, 100);
+console.log(``);
+console.log(`Below log is Q6`)
 
 
-
-/**
- * TODO:
+    /**
+ * TODO 6:
  * Uncomment the line below to generate a random number between 0 and 5.
  * (In this line of code, 0 is inclusive, and 6 is exclusive)
  * Prompt the user for their total bill, then use your `calculateTotal` function
@@ -275,4 +274,4 @@ askToPlay();
 
 
 
-// })();
+})();
