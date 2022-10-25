@@ -2,6 +2,7 @@
 
 // TODO Q1
 
+
 function showMultiplicationTable(x) {
     for (let i = 1; i < 11; i++) {
         console.log(`${i} * ${x} = ` + (i * x));
@@ -9,12 +10,13 @@ function showMultiplicationTable(x) {
 }
 
 console.log(`============ For Loop Exercise 1 ============`); console.log(``);
-showMultiplicationTable(11);
+showMultiplicationTable(7);
 console.log(``); console.log(``);
 
 
 
 // TODO Q2
+
 
 
 function randomNumberGenerator(min, max) {
@@ -44,9 +46,17 @@ console.log(``); console.log(``);
 // Source: https://stackoverflow.com/questions/1877475/repeat-a-string-in-javascript-a-number-of-times
 // Loops are really hard btw. Struggling.
 
+// Update: Found repeat to make it also as a different way to solve this
+
+// function pyramidNumbers() {
+//     for (let x = 1; x < 10; x++) {
+//         console.log(Array(x + 1).join(x))
+//     }
+// }
+
 function pyramidNumbers() {
-    for (let x = 1; x < 10; x++) {
-        console.log(Array(x + 1).join(x))
+    for (var i = 1; i < 10; i++) {
+        console.log(i.toString().repeat(i));
     }
 }
 
@@ -57,6 +67,7 @@ console.log(``); console.log(``);
 
 
 // TODO Q4
+
 
 function reverseLoop() {
     for (let x = 100; x > 1; x--) {
