@@ -6,31 +6,6 @@
   <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
-<!--<header>-->
-<!--  <h1>Veridian Dynamics</h1>-->
-<!--  <h3>Register with us</h3>-->
-<!--</header>-->
-<!--<div class="form-container">-->
-<!--  <form method="POST" action="https://request-inspector.glitch.me/">-->
-<!--    <label for="email">Username</label>-->
-<!--    <input id="email" name="email" type="text" placeholder="email">-->
-<!--    <br>-->
-<!--    <label for="password">Password</label>-->
-<!--    <input id="password" name="password" type="password" placeholder="password">-->
-<!--    <br>-->
-<!--    <label for="bio">Bio</label>-->
-<!--    <textarea placeholder="Tell us about yourself" id="bio"></textarea>-->
-<!--    <br>-->
-<!--    <input type="submit">-->
-<!--  </form>-->
-<!--</div>-->
-<!--<div class="register-container">-->
-<!--  Not a member?-->
-<!--  <a href="register.html">-->
-<!--    <button>Register with us</button>-->
-<!--  </a>-->
-<!--</div>-->
-
 <header>
   <h1>Veridian Dynamics&#169;</h1>
   <h3> Register with us </h3>
@@ -66,12 +41,13 @@
     <div class="browser-container">
       <div>What kind of browser do you use?</div>
         <br>
-      <select name="browser">
-        <option value="chrome">Chrome</option>
-        <option value="firefox">Firefox</option>
-        <option value="safari">Safari</option>
-        <option value="edge">Edge</option>
-        <option value="other">Other</option>
+      <label for="browser"></label>
+      <select id="browser" name="browser">
+        <option label="Chrome" value="chrome"></option>
+        <option label="Firefox" value="firefox"></option>
+        <option label="Safari" value="safari"></option>
+        <option label="Edge" value="edge"></option>
+        <option label="Other" value="other"></option>
       </select>
     </div>
     <br>
