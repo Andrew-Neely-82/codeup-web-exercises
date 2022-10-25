@@ -21,7 +21,7 @@
         return "Hello, " + name;
     }
 
-    console.log("Q1: " + sayhello("Andrew"));
+    console.log(`Q1: ${sayhello("Andrew")}`);
 
 
 
@@ -37,7 +37,7 @@
 
     sayhello('Andrew');
     let helloMessage = sayhello('Andrew');
-    console.log("Q2: " + "helloMessage = " + helloMessage);
+    console.log(`Q2: helloMessage = ${helloMessage}`);
 
 
 
@@ -52,7 +52,7 @@
 
     let myName = 'Andrew'
     sayhello(myName)
-    console.log("Q3: myName = " + sayhello(myName));
+    console.log(`Q3: myName = ${sayhello(myName)}`);
 
 
 
@@ -89,7 +89,7 @@
     }
 
     isTwo(random);
-    console.log("Q4: Random number is " + random + " = " + isTwo(random));
+    console.log(`Q4: Random number is ${random} = ${isTwo(random)}`);
 
 
 
@@ -127,8 +127,8 @@
 
     alert("The total tip amount is $" + calculateTip().toFixed(2))
 
-    console.log("Q5: Tip is " + calculateTip().toFixed(2));
-    console.log("Q6: Tip is " + calculateTip().toFixed(2));
+    console.log(`Q5: Tip is ${calculateTip().toFixed(2)}`);
+    console.log(`Q6: Tip is ${calculateTip().toFixed(2)}`);
 
 
 
@@ -154,8 +154,6 @@
         return (originalPrice - (originalPrice * discountPercent))
     }
 
-    console.log("Q7: Discount price is $" + applyDiscount().toFixed(4));
-
-
+    console.log(`Q7: Discount price is $${applyDiscount().toFixed(4)}`);
 
 })();

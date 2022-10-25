@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Roboto Flex', sans-serif;
     background: antiquewhite url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
@@ -40,7 +38,6 @@ a:active {
 
 table, tr, th, td {
     border: 1px solid black;
-    /*border-radius: 5px;*/
     padding: 3px;
 }
 
