@@ -11,8 +11,13 @@
      * console.log planetsArray to check your work
      */
 
-    console.log(`TODO 1: ${planetsArray}`);
-    console.log(``)
+    // console.log(`TODO 1: ${planetsArray}`);
+    // console.log(``)
+
+    planetsArray = planetsString.split(`|`);
+    console.log(`TODO 1`)
+    console.log(planetsArray);
+    console.log(``);
 
     /**
      * TODO 2:
@@ -25,10 +30,17 @@
      * string, and <li> tags around each planet.
      */
 
-    console.log(planetsArray.join(`<br>`))
-    console.log(`TODO 2.1: ${planetsStringBreak}`);
-    console.log(`TODO 2.2: ${planetsStringList}`);
+    // console.log(planetsArray.join(`<br>`))
+    // console.log(`TODO 2.1: ${planetsStringBreak}`);
+    // console.log(`TODO 2.2: ${planetsStringList}`);
 
+    // updated
+
+    let bonus = planetsArray
+    let list = bonus.join(`<li>`)
+
+    list = `<ul><li>${list}</li></ul>`
+    console.log(`Bonus: ${list}`)
 
 
 })();
