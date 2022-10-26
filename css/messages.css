@@ -15,39 +15,39 @@ body, html {
 .message-info {
     color: rgb(80,75,165);
     background-color: rgb(208 221 252);
-    border: 1px solid;
+    border: 1px solid rgb(215,215,215);
     border-radius: 5px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
 }
 
 .message-success {
-    color: rgb(59,137,90);
+    color: rgb(57,130,81);
     background-color: rgb(207,243,218);
-    border: 1px solid;
+    border: 1px solid rgb(215,215,215);
     border-radius: 5px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
 }
 
 .message-warning {
     color: rgb(136,115,18);
     background-color: rgb(252,251,201);
-    border: 1px solid;
+    border: 1px solid rgb(215,215,215);
     border-radius: 5px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
 }
 
 .message-error {
     color: rgb(142,41,65);
     background-color: rgb(250,210,214);
-    border: 1px solid;
+    border: 1px solid rgb(215,215,215);
     border-radius: 5px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
 }

@@ -111,7 +111,7 @@ fieldset {
     font-weight: bold;
     /* The border of this element should be 1px, and its color should be light grey */
     background-color: #0fb784;
-    border: 1px solid #0fb784;
+    border: 1px solid lightgrey;
 }
 
 .form-control {
