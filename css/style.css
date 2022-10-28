@@ -1,15 +1,22 @@
 body {
     font-family: 'Roboto Flex', sans-serif;
-    background: antiquewhite url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
+    background: azure url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000") center;
+    user-select: none;
 }
 
 .fancy-header {
+    text-align: center;
+    text-shadow: .1em .1em .1em rgba(20 20 20 / .2);
     color: purple;
+}
+
+p {
+    color: blue;
+    text-shadow: .2em .2em 1em rgba(20 20 20 / .5);
+}
+
+h2 {
+    color: slateblue;
     text-decoration: underline;
 }
 
@@ -21,28 +28,57 @@ h1 {
 ul {
     list-style: circle;
 }
-td, tr {
-    padding: 2px 10px;
+
+ol {
+    list-style: lower-greek;
 }
 
-a:hover {
-    cursor: pointer;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 1);
-}
-a:visited {
-    color: gray;
-}
-a:active {
-    color: green;
+ul > li {
+    color: rgb(12, 100, 163);
+    text-shadow: 2px 2px 4px rgba(20 20 20 / .2);
 }
 
-table, tr, th, td {
-    border: 1px solid black;
-    padding: 3px;
+ol > li {
+    color: rgb(210, 20, 20);
+    text-shadow: 2px 2px 4px rgba(20 20 20 / .2);
+}
+
+img {
+    border: 1px solid lightskyblue;
+    border-radius: 1ex;
 }
 
 table {
-    border: 5px double black;
+    content: "";
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    border: 3px double green;
+    border-radius: 1ex;
+    padding: 2px;
+}
+
+tr, th, td {
+    border: 1px solid blue;
     border-radius: 5px;
-    padding: 0;
+    padding: 3px;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:link {
+    color: #1a544c;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+}
+
+a:active {
+    color: green;
 }
