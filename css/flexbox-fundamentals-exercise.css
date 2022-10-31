@@ -133,6 +133,7 @@ section:nth-of-type(6) {
   /* enter needed declarations here */
   flex-wrap: wrap;
   align-items: center;
+  align-content: space-around;
   justify-content: space-between;
 }
 
