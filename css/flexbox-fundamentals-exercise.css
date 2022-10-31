@@ -43,7 +43,7 @@ h3 {
   /* enter needed declarations here */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 section {
