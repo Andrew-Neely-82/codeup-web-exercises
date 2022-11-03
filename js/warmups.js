@@ -119,7 +119,7 @@ function getAverageHeight(array) {
     array.forEach((hamster) => {
         total += hamster.heightInMM;
     });
-    console.log(`${total / array.length}`);
+    console.log(total / array.length);
 }
 
 getAverageHeight(hamsters);
