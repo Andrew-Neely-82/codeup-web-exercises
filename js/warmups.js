@@ -92,21 +92,34 @@ const hamsters = [
 
 
 
-function fizzBuzz() {
-    for (let i = 1; i <= 100; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log(`FizzBuzz`);
-        } else if (i % 3 === 0) {
-            console.log(`Fizz`);
-        } else if (i % 5 === 0) {
-            console.log(`Buzz`);
-        } else {
-            console.log(i);
-        }
-    }
+// function fizzBuzz() {
+//     for (let i = 1; i <= 100; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log(`FizzBuzz`);
+//         } else if (i % 3 === 0) {
+//             console.log(`Fizz`);
+//         } else if (i % 5 === 0) {
+//             console.log(`Buzz`);
+//         } else {
+//             console.log(i);
+//         }
+//     }
+// }
+//
+// fizzBuzz();
+//
+
+
+// TODO: Today's warmup: Write a function that takes in an array of objects and
+// returns the average of the heightInMM properties from each object.
+
+
+function getAverageHeight(array) {
+    let total = 0;
+    array.forEach((hamster) => {
+        total += hamster.heightInMM;
+    });
+    console.log(`${total / array.length}`);
 }
 
-fizzBuzz();
-
-
-
+getAverageHeight(hamsters);
