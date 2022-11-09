@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -26,8 +25,19 @@
   culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+
+<!-- Attach click event listeners to each of the buttons and have the handlers perform the
+modifications that were automatically taking place. For example, the first button should set inner html of mainHeader
+to "JavaScript is Cool".-->
+
+<button id="button-1">1</button>
+<button id="button-2">2</button>
+<button id="button-3">3</button>
+<button id="button-4">4</button>
+
+
 <script>
-    (function() {
+    (function () {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         let mainHeader = document.getElementById("main-header");
@@ -38,7 +48,8 @@
             let str = text.toString();
             return mainHeader.innerHTML = str;
         }
-        changeH1Text("JavaScript is Cool");
+
+        // changeH1Text("JavaScript is Cool");
 
         // mainHeader.innerHTML = "JavaScript is Cool";
 
@@ -51,6 +62,7 @@
             let color = colorChoice.toString()
             return subHeader.style.color = color
         }
+
         subHeaderToBlue(`blue`);
 
         // subHeader.style.color = "blue";
@@ -67,6 +79,7 @@
                 }
             }
         }
+
         toGray();
 
         // TODO: Set text color of li with dbid = 1 to blue
@@ -79,6 +92,7 @@
                 }
             }
         }
+
         liToBlue(`blue`);
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
@@ -90,9 +104,39 @@
             let str = text.toString();
             return subParagraphs[0].innerHTML = str;
         }
+
         firstSubPara("Mission Accomplished!");
 
         // subParagraphs[0].innerHTML = "Mission Accomplished!";
+
+
+        // TODO: Set a button to make the make the main header to say "JavaScript is Cool"
+        let button1 = document.getElementById("button-1");
+        button1.addEventListener("click", function () {
+            changeH1Text("JavaScript is Cool");
+        });
+
+        // TODO: Set a button to invert the body colors
+        let button2 = document.getElementById(`button-2`);
+        button2.addEventListener(`click`, function () {
+            document.body.style.backgroundColor = "#000";
+            document.body.style.color = "#fff"
+        })
+
+        // TODO: Set a button to make the buttons rounded
+        let button3 = document.getElementsByTagName(`button`)[2]
+        button3.addEventListener(`click`, function () {
+            document.body.style.fontFamily = `Arial, Sans-Serif`
+        })
+
+        // TODO: Set a button to reset the page styling
+        let button4 = document.getElementsByTagName(`button`)[3]
+        button4.addEventListener(`click`, function () {
+            document.body.style.fontFamily = `Times`;
+            document.body.style.backgroundColor = "#fff";
+            document.body.style.color = `#000`;
+            changeH1Text(`Hello World!`)
+        })
 
     })();
 </script>
