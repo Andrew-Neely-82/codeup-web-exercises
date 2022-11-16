@@ -31,10 +31,10 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 
-  $(`.list-item`).css(`font-size`, `20px`)
-  $(`h1`).css(`background-color`, `red`)
-  $(`p`).css(`background-color`, `green`)
-  $(`li`).css(`background-color`, `blue`)
+  $(document).ready(() => {
+    $(`h1, p, li`).css(`background-color`, `red`)
+  });
+
 
 </script>
 </body>
