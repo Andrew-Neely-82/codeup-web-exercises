@@ -58,10 +58,29 @@
     <dt>Bears have not killed a single person in Olympic National Park, but</dt>
     <dd class="invisible">a mountain goat, which is not a native species to the region, killed a man in 2010.</dd>
     <br>
-
   </dl>
-
 </div>
+
+<h3 id="national-parks-heading">National Parks</h3>
+<ul id="national-parks">
+  <li>Arches</li>
+  <li>Badlands</li>
+  <li>Carlsbad Caverns</li>
+  <li>Denali</li>
+  <li>Everglades</li>
+</ul>
+<h3>State Parks of Texas</h3>
+<ul id="state-parks-texas">
+  <li>Abilene</li>
+  <li>Big Bend</li>
+  <li>Choke Canyon</li>
+  <li>Davis Mountains</li>
+  <li>Enchanted Rock</li>
+</ul>
+<button id="button">Press me</button>
+<br>
+<br>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script>
@@ -84,6 +103,22 @@
     });
   });
 
+  // When any h3 is clicked, the li's underneath it should be bolded. Use font-weight: bold to achieve this.
+
+
+  $(document).ready(function () {
+    $(`#button`).click(function () {
+      $(`ul`).each(function () {
+        $(this).children().last().css(`background-color`, `yellow`);
+      });
+    });
+    $(`h3`).click(function () {
+      $(this).next().children().css(`font-weight`, `bold`);
+    });
+    $(`li`).click(function () {
+      $(this).parent().children().first().css(`color`, `blue`)
+    })
+  });
 
 </script>
 </body>
