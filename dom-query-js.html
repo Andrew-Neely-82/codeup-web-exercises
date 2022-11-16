@@ -29,11 +29,12 @@
 <!-- Attach click event listeners to each of the buttons and have the handlers perform the
 modifications that were automatically taking place. For example, the first button should set inner html of mainHeader
 to "JavaScript is Cool".-->
-
-<button id="button-1">1</button>
-<button id="button-2">2</button>
-<button id="button-3">3</button>
-<button id="button-4">4</button>
+<div class="container">
+  <button id="button-1">1</button>
+  <button id="button-2">2</button>
+  <button id="button-3">3</button>
+  <button id="button-4">4</button>
+</div>
 
 
 <script>
@@ -72,15 +73,15 @@ to "JavaScript is Cool".-->
 
         // TODO: Set text color on every other list item to grey
 
-        function toGray() {
+        function toGray(color) {
             for (let i = 0; i < listItems.length; i++) {
                 if (i % 2 === 0) {
-                    listItems[i].style.color = "gray";
+                    listItems[i].style.color = color;
                 }
             }
         }
 
-        toGray();
+        toGray('gray');
 
         // TODO: Set text color of li with dbid = 1 to blue
 
@@ -117,27 +118,106 @@ to "JavaScript is Cool".-->
         });
 
         // TODO: Set a button to invert the body colors
-        let button2 = document.getElementById(`button-2`);
+        let button2 = document.getElementById(`button-3`);
         button2.addEventListener(`click`, function () {
             document.body.style.backgroundColor = "#000";
             document.body.style.color = "#fff"
+            mainHeader.style.textShadow = `2px 2px 4px rgba(255 255 255 / 0.5)`
+            document.body.style.transition = `1000ms ease`
+            button1.style.backgroundColor = "#000";
+            button1.style.border = "1px solid white";
+            button1.style.color = "white";
+            button1.style.borderRadius = `5em`
+            button1.style.padding = `0 1em`
+            button1.style.transition = `1000ms ease`
+
+            button2.style.backgroundColor = "#000";
+            button2.style.border = "1px solid white";
+            button2.style.color = "white";
+            button2.style.borderRadius = `5em`
+            button2.style.padding = `0 1em`
+            button2.style.transition = `1000ms ease`
+
+            button3.style.backgroundColor = "#000";
+            button3.style.border = "1px solid white";
+            button3.style.color = "white";
+            button3.style.borderRadius = `5em`
+            button3.style.padding = `0 1em`
+            button3.style.transition = `1000ms ease`
+
+            button4.style.backgroundColor = "#000";
+            button4.style.border = "1px solid white";
+            button4.style.color = "white";
+            button4.style.borderRadius = `5em`
+            button4.style.padding = `0 1em`
+            button4.style.transition = `1000ms ease`
         })
 
         // TODO: Set a button to make the buttons rounded
-        let button3 = document.getElementsByTagName(`button`)[2]
+        let button3 = document.getElementsByTagName(`button`)[1]
         button3.addEventListener(`click`, function () {
             document.body.style.fontFamily = `Arial, Sans-Serif`
+            document.body.style.display = `flex`
+            document.body.style.flexDirection = `column`
+            document.body.style.justifyContent = `center`
+            document.body.style.alignItems = `center`
+            document.body.style.margin = `10em 35em`
+            for (let i = 0; i < listItems.length; i++) {
+                if (i % 1 === 0) {
+                    listItems[i].style.listStyle = `none`;
+                }
+            }
+            let ul = document.querySelector(`ul`);
+            ul.style.paddingInlineStart = `0px`
         })
 
         // TODO: Set a button to reset the page styling
         let button4 = document.getElementsByTagName(`button`)[3]
         button4.addEventListener(`click`, function () {
-            document.body.style.fontFamily = `Times`;
-            document.body.style.backgroundColor = "#fff";
-            document.body.style.color = `#000`;
-            changeH1Text(`Hello World!`)
-        })
+            for (let i = 0; i < listItems.length; i++) {
+                if (i % 1 === 0) {
+                    listItems[i].style.display = `none`
+                }
+            }
+            document.body.style.transitionDuration = `1000ms ease`
+            mainHeader.style.display = `none`
+            subParagraphs[0].style.display = `none`
+            button1.style.display = `none`
+            button2.style.display = `none`
+            button3.style.display = `none`
+            button4.style.display = `none`
 
+
+            // subHeader.style.transitionDelay = `1000ms`
+            document.getElementById(`sub-header`).innerHTML = `Fin`
+            subHeader.style.color = `white`
+            document.body.style.background = `url(https://media.tenor.com/LnLZnAFnATkAAAAC/spongebob-bow-tie.gif)`
+            document.body.style.backgroundRepeat = `none`
+
+
+            liToBlue(`black`);
+            toGray('black');
+
+            let time = 1;
+            let interval = 1000;
+            let timer = setInterval(updateTimer, interval)
+
+            // TODO: This function needs to be called once every second
+            function updateTimer() {
+                if (time === 2) {
+                    time--
+                } else if (time === 1) {
+                    document.body.style.transitionDuration = `1000ms ease`
+                    document.getElementById(`sub-header`).innerHTML = `Goodbye`
+                    subHeader.style.color = `black`
+                    subHeader.style.transitionDelay = `1500ms`
+                    document.body.style.userSelect = `none`
+                    document.body.style.background = `black`
+
+                    clearInterval(timer)
+                }
+            }
+        })
     })();
 </script>
 </body>
