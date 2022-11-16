@@ -31,9 +31,27 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 
-  $(document).ready(() => {
-    $(`h1, p, li`).css(`background-color`, `red`)
+$(document).ready(() => {
+  $(`h1`).click(function () {
+    $(`h1`).css(`background-color`, `red`)
   });
+  $(`p`).dblclick(function () {
+    $(`p`).css(`font-size`, `16px`)
+  });
+
+
+  $('li').hover(
+    function() {
+      $(this).css('color', '#F00');
+    },
+    function() {
+      $(this).css('color', '#000');
+    }
+  );
+
+
+});
+
 
 
 </script>
