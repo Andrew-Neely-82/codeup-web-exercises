@@ -4,14 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>jquery exercises</title>
 </head>
 <body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js">
-    $(document).ready(function () {
-        alert("The DOM has finished loading");
-    });
+<div class="wrapper" id="div">
+  <h1 class="header" id="h1">Codeup</h1>
+  <ul class="list" id="ul">
+    <li class="list-item" id="li-1">HTML</li>
+    <li class="list-item" id="li-2">CSS</li>
+    <li class="list-item" id="li-3">JS</li>
+  </ul>
+</div>
+
+
+<!--Use jQuery to select an element by the id. Alert the contents of the element.-->
+
+<!--Update the jQuery code to select and alert a different id.-->
+
+<!--Use the same id on 2 elements. How does this change the jQuery selection?-->
+
+<!--Remove the duplicate id. Each id should be unique on that page-->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+  let contents = $(`#h1`).html();
+  alert(contents);
+
 </script>
 </body>
 </html>
