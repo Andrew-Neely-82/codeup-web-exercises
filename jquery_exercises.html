@@ -22,25 +22,24 @@
 <script>
 
 
-$(document).ready(() => {
-  $(`h1`).click(function () {
-    $(`h1`).css(`background-color`, `red`)
+  $(document).ready(() => {
+    $(`h1`).click(function () {
+      $(`h1`).css(`background-color`, `red`)
+    });
+    $(`p`).dblclick(function () {
+      $(`p`).css(`font-size`, `16px`)
+    });
+
+
+    $('li').hover(
+      function () {
+        $(this).css('color', '#F00');
+      },
+      function () {
+        $(this).css('color', '#000');
+      }
+    );
   });
-  $(`p`).dblclick(function () {
-    $(`p`).css(`font-size`, `16px`)
-  });
-
-
-  $('li').hover(
-    function() {
-      $(this).css('color', '#F00');
-    },
-    function() {
-      $(this).css('color', '#000');
-    }
-  );
-});
-
 
 
 </script>
