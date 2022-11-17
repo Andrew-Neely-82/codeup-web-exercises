@@ -1,112 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
       .invisible {
-          visibility: hidden;
+        visibility: hidden;
       }
 
       .visible {
-          visibility: visible;
+        visibility: visible;
       }
-  </style>
-  <title>jquery faq</title>
-</head>
-<body>
+    </style>
+    <title>jquery faq</title>
+  </head>
+  <body>
+    <div>
+      <h1>National Park Facts</h1>
+      <dl>
+        <dt>Grand Canyon is</dt>
+        <dd class="invisible" style="margin-bottom: 1em">Known as one of the Seven Natural Wonders of the World.</dd>
 
-<div>
-  <h1>National Park Facts</h1>
-  <dl>
-    <dt>Grand Canyon is</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">Known as one of the Seven Natural Wonders of the World.</dd>
+        <dt>California's Sequoia National Park is</dt>
+        <dd class="invisible" style="margin-bottom: 1em">home to the largest living single-stem tree in the world named General Sherman.</dd>
 
-    <dt>California's Sequoia National Park is</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">home to the largest living single-stem tree in the world named General Sherman.</dd>
+        <dt>The Great Smoky Mountains National Park is</dt>
+        <dd class="invisible" style="margin-bottom: 1em">the most visited National Park with more than 9 million guests per year.</dd>
 
-    <dt>The Great Smoky Mountains National Park is</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">the most visited National Park with more than 9 million guests per year.</dd>
+        <dt>Mount McKinley in the Alaska Range of Denali National Park is</dt>
+        <dd class="invisible" style="margin-bottom: 1em">the highest point in the national parks ar 20,302 feet.</dd>
 
-    <dt>Mount McKinley in the Alaska Range of Denali National Park is</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">the highest point in the national parks ar 20,302 feet.</dd>
+        <dt>Mammoth Cave National Park in Kentucky</dt>
+        <dd class="invisible" style="margin-bottom: 1em">has the longest cave system in the world with more than 3,454 mapped miles.</dd>
 
-    <dt>Mammoth Cave National Park in Kentucky</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">has the longest cave system in the world with more than 3,454 mapped miles.</dd>
+        <dt>Only one state in the US is</dt>
+        <dd class="invisible" style="margin-bottom: 1em">not lucky enough to have a National park or monument. It is the first state. Delaware</dd>
 
-    <dt>Only one state in the US is</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">not lucky enough to have a National park or monument. It is the first state. Delaware</dd>
+        <dt>In 2014, authorities at the Sequoia National Park found</dt>
+        <dd class="invisible" style="margin-bottom: 1em">a $36 million marijuana cultivation operation just half a mile from a popular tourist area</dd>
 
-    <dt>In 2014, authorities at the Sequoia National Park found</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">a $36 million marijuana cultivation operation just half a mile from a popular tourist area
-    </dd>
+        <dt>White Sands National Monument spans more than</dt>
+        <dd class="invisible" style="margin-bottom: 1em">176,000 acres of New Mexico desert and contains the world's largest gypsum dune fields</dd>
 
-    <dt>White Sands National Monument spans more than</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">176,000 acres of New Mexico desert and contains the world's largest gypsum dune fields</dd>
+        <dt>Mauna Loa Volcano in Hawaii Volcanoes National Park is the</dt>
+        <dd class="invisible" style="margin-bottom: 1em">largest volcano on earth both in terms of height and volume.</dd>
 
-    <dt>Mauna Loa Volcano in Hawaii Volcanoes National Park is the</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">largest volcano on earth both in terms of height and volume.</dd>
+        <dt>Bears have not killed a single person in Olympic National Park, but</dt>
+        <dd class="invisible" style="margin-bottom: 1em">a mountain goat, which is not a native species to the region, killed a man in 2010.</dd>
+      </dl>
+    </div>
 
-    <dt>Bears have not killed a single person in Olympic National Park, but</dt>
-    <dd class="invisible" style="margin-bottom: 1em;">a mountain goat, which is not a native species to the region, killed a man in 2010.</dd>
-  </dl>
-</div>
+    <h3 id="great-smoky-mountains-national-park-heading">Great Smoky Mountains National Park</h3>
+    <ul id="great-smoky-mountains-national-park-facts">
+      <li>Established	1933</li>
+      <li>Visitors 53,750 </li>
+      <li>Located about 15 miles southwest of Abilene</li>
+      <li>was once a campground for Comanche Indians</li>
+    </ul>
+    <h3 id="zion-national-park-heading">Zion National Park</h3>
+    <ul id="zion-national-park-facts">
+      <li>Choke Canyon Reservoir provides drinking water for the city of Corpus Christi</li>
+      <li>It's about 65 miles south of the city of San Antonio</li>
+      <li>The site hosted a rare bird, a Spotted Rail</li>
+      <li>Has a capacity of more than 695,000 acre-feet of water</li>
+    </ul>
+    <h3 id="big-bend-heading">Big Bend National Park Facts</h3>
+    <ul id="big-bend">
+      <li>Location: Texas</li>
+      <li>Acreage: 801,163 acres</li>
+      <li>Visitation: 581,000 visitors in 2021</li>
+      <li>Highest Elevation: 7,825 feet at Emory Peak</li>
+    </ul>
+    <button id="button">Press me</button>
+    <br />
+    <br />
 
-<h3 id="national-parks-heading">National Parks</h3>
-<ul id="national-parks">
-  <li>Arches</li>
-  <li>Badlands</li>
-  <li>Carlsbad Caverns</li>
-  <li>Denali</li>
-  <li>Everglades</li>
-</ul>
-<h3>State Parks of Texas</h3>
-<ul id="state-parks-texas">
-  <li>Abilene</li>
-  <li>Big Bend</li>
-  <li>Choke Canyon</li>
-  <li>Davis Mountains</li>
-  <li>Enchanted Rock</li>
-</ul>
-<button id="button">Press me</button>
-<br>
-<br>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
-
-  $(document).ready(function () {
-    $(`<a>`, {
-      text: `Show Answers`,
-      href: `#`,
-      id: `answers`
-    }).appendTo(`div`);
-    $('#answers').click(function (event) {
-      event.preventDefault();
-      $('.invisible').toggleClass('visible');
-    });
-    $(`dt`).click(function () {
-      $(this).css(`background-color`, `yellow`)
-        $(this).click(function () {
-          $(this).css(`background-color`, `transparent`)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(`<a>`, {
+          text: `Show Answers`,
+          href: `#`,
+          id: `answers`,
+        }).appendTo(`div`);
+        $("#answers").click(function (event) {
+          event.preventDefault();
+          $(".invisible").toggleClass("visible");
         });
-    });
-  });
-
-  $(document).ready(function () {
-    $(`#button`).click(function () {
-      $(`ul`).each(function () {
-        $(this).children().last().css(`background-color`, `yellow`);
+        $(`dt`).click(function () {
+          $(this).css(`background-color`, `yellow`);
+          $(this).click(function () {
+            $(this).css(`background-color`, `transparent`);
+          });
+        });
       });
-    });
-    $(`h3`).click(function () {
-      $(this).next().children().css(`font-weight`, `bold`);
-    });
-    $(`li`).click(function () {
-      $(this).parent().children().first().css(`color`, `blue`)
-    })
-  });
 
-</script>
-</body>
+      $(document).ready(function () {
+        $(`#button`).click(function () {
+          $(`ul`).each(function () {
+            $(this).children().last().css(`background-color`, `yellow`);
+          });
+        });
+        $(`h3`).click(function () {
+          $(this).next().children().css(`font-weight`, `bold`);
+        });
+        $(`li`).click(function () {
+          $(this).parent().children().first().css(`color`, `blue`);
+        });
+      });
+    </script>
+  </body>
 </html>
