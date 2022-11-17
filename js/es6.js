@@ -3,30 +3,30 @@
  */
 const users = [
   {
-    name: 'zach',
-    email: 'zach@codeup.com',
-    languages: ['javascript', 'bash']
+    name: "zach",
+    email: "zach@codeup.com",
+    languages: ["javascript", "bash"],
   },
   {
-    name: 'ryan',
-    email: 'ryan@codeup.com',
-    languages: ['clojure', 'javascript']
+    name: "ryan",
+    email: "ryan@codeup.com",
+    languages: ["clojure", "javascript"],
   },
   {
-    name: 'luis',
-    email: 'luis@codeup.com',
-    languages: ['java', 'scala', 'php']
+    name: "luis",
+    email: "luis@codeup.com",
+    languages: ["java", "scala", "php"],
   },
   {
-    name: 'fernando',
-    email: 'fernando@codeup.com',
-    languages: ['java', 'php', 'sql']
+    name: "fernando",
+    email: "fernando@codeup.com",
+    languages: ["java", "php", "sql"],
   },
   {
-    name: 'justin',
-    email: 'justin@codeup.com',
-    languages: ['html', 'css', 'javascript', 'php']
-  }
+    name: "justin",
+    email: "justin@codeup.com",
+    languages: ["html", "css", "javascript", "php"],
+  },
 ];
 
 // fill in your name and email and add some programming languages you know
@@ -34,15 +34,14 @@ const users = [
 users.push({
   name: `andrew`,
   email: `andrew@fakemail.com`,
-  languages: [`html`, `css`, `javascript`, `bootstrap`, `jquery`, `ajax`]
-})
+  languages: [`html`, `css`, `javascript`, `bootstrap`, `jquery`, `ajax`],
+});
 
 // replace the `var` keyword with `const`, then try to reassign a variable
 // declared as `const`
-const name = 'your_name_here';
-const email = '';
+const name = "your_name_here";
+const email = "";
 const languages = [];
-
 
 // rewrite the object literal using object property shorthand
 users.push({
@@ -74,20 +73,18 @@ users.forEach(function (user) {
   const email = user.email;
   const languages = user.languages;
 
-
   // rewrite the assignment below to use template strings
-  developers.push(`${name}'s email is ${email}. ${name} knows ${languages.join(', ')}`);
+  developers.push(`${name}'s email is ${email}. ${name} knows ${languages.join(", ")}`);
 });
 
 // Use `let` for the following variable
-let list = '<ul>';
+let list = "<ul>";
 
 // rewrite the following loop to use a for of loop
 // developers.forEach(function (developer) {
 for (developer of developers) {
-
   // TODO: rewrite the assignment below to use template strings
-  list += '<li>${developer}</li>';
+  list += "<li>${developer}</li>";
 }
 
-list += '</ul>';
+list += "</ul>";
