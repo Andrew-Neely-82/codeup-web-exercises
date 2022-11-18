@@ -75,37 +75,41 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(`<a>`, {
-          text: `Show Answers`,
-          href: `#`,
-          id: `answers`,
-        }).appendTo(`div`);
-        $("#answers").click(function (event) {
-          event.preventDefault();
-          $(".invisible").toggleClass("visible");
-        });
-        $(`dt`).click(function () {
-          $(this).css(`background-color`, `yellow`);
-          $(this).click(function () {
-            $(this).css(`background-color`, `transparent`);
-          });
-        });
-      });
+      (() => {
+        `use strict`;
 
-      $(document).ready(function () {
-        $(`#button`).click(function () {
-          $(`ul`).each(function () {
-            $(this).children().last().css(`background-color`, `yellow`);
+        $(document).ready(function () {
+          $(`<a>`, {
+            text: `Show Answers`,
+            href: `#`,
+            id: `answers`,
+          }).appendTo(`div`);
+          $("#answers").click(function (event) {
+            event.preventDefault();
+            $(".invisible").toggleClass("visible");
+          });
+          $(`dt`).click(function () {
+            $(this).css(`background-color`, `yellow`);
+            $(this).click(function () {
+              $(this).css(`background-color`, `transparent`);
+            });
           });
         });
-        $(`h3`).click(function () {
-          $(this).next().children().css(`font-weight`, `bold`);
+
+        $(document).ready(function () {
+          $(`#button`).click(function () {
+            $(`ul`).each(function () {
+              $(this).children().last().css(`background-color`, `yellow`);
+            });
+          });
+          $(`h3`).click(function () {
+            $(this).next().children().css(`font-weight`, `bold`);
+          });
+          $(`li`).click(function () {
+            $(this).parent().children().first().css(`color`, `blue`);
+          });
         });
-        $(`li`).click(function () {
-          $(this).parent().children().first().css(`color`, `blue`);
-        });
-      });
+      })();
     </script>
   </body>
 </html>
