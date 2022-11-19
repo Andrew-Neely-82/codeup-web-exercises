@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator-wrapper">
+      <div class="calculator-container">
+        <form class="form">
+          <input class="result-display">
+        </form>
+        <div class="container-inputs">
+          <div class="white-inputs">
+            <div class="white-inputs-row-1">
+              <input type="button" class="inp-white" value="C" id="clear"></input>
+              <input type="button" class="inp-white" value="+/-" id="plus-minus"></input>
+              <input type="button" class="inp-white" value="%" id="percent"></input>
+            </div>
+            <div class="white-inputs-row-2">
+              <input type="button" class="inp-white" id="seven" onclick="" value="7"></input>
+              <input type="button" class="inp-white" id="eight" onclick="" value="8"></input>
+              <input type="button" class="inp-white" id="nine" onclick="" value="9"></input>
+            </div>
+            <div class="white-inputs-row-3">
+              <input type="button" class="inp-white" id="four" onclick="" value="4"></input>
+              <input type="button" class="inp-white" id="five" onclick="" value="5"></input>
+              <input type="button" class="inp-white" id="six"  onclick="" value="6"></input>
+            </div>
+            <div class="white-inputs-row-3">
+              <input type="button" class="inp-white" value="1" onclick="insert(1)" id="one"></input>
+              <input type="button" class="inp-white" value="2" onclick="insert(1)" id="two"></input>
+              <input type="button" class="inp-white" value="3" onclick="insert(1)" id="three"></input>
+            </div>
+            <div class="white-inputs-row-4">
+              <input type="button" class="inp-white" value="0" onclick="" id="zero"></input>
+              <input type="button" class="inp-white" value="." onclick="" id="decimal"></input>
+            </div>
+          </div>
+          <div class="orange-inputs">
+            <input type="button" class="inp-orange" value="/" onclick="" id="divide"></input>
+            <input type="button" class="inp-orange" value="X" onclick="" id="multiply"></input>
+            <input type="button" class="inp-orange" value="-" onclick="" id="subtract"></input>
+            <input type="button" class="inp-orange" value="+" onclick="" id="add"></input>
+            <input type="button" class="inp-orange" value="=" onclick="" id="equals"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    
+    <script src="./app.js"></script>
+  </body>
+</html>
