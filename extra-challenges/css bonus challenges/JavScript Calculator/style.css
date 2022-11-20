@@ -54,7 +54,6 @@ input:active {
   z-index: -1000;
 }
 
-
 .result {
   display: flex;
   justify-content: center;
@@ -134,29 +133,24 @@ input:active {
   border: 1px solid black;
 }
 
-
 /* make a max width media query */
 
 @media screen and (max-width: 450px) {
-
   body {
     width: 100vw;
   }
-  
+
   .calculator-wrapper {
     scale: 0.75;
   }
 }
 
 @media screen and (max-width: 300px) {
-
   body {
     width: 100vw;
   }
-  
+
   .calculator-wrapper {
     scale: 0.5;
   }
-}
-  
 }
