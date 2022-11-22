@@ -1,0 +1,160 @@
+:root {
+  --raleway: "Raleway", sans-serif;
+  --segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --background-clr: #f1f1f1;
+  --red-text: #d73a65;
+  --input-border: #CCC;
+  --button: #616161;
+}
+
+body {
+  background-color: var(--background-clr);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--raleway);
+  font-size: 24px;
+  background-color: white;
+  padding: 36px 32px;
+}
+
+.left {
+  display: inline-flex;
+}
+
+.right {
+  display: inline-flex;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper-pics {
+  display: flex;
+  width: 100%;
+}
+
+.container-pics-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-pics-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--segoe);
+  font-size: 16px;
+  padding: 16px;
+}
+
+.container-about h1 {
+  font-size: 1.85vw;
+  font-family: var(--raleway);
+  font-weight: 400;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+
+.container-about img {
+  height: 29vh;
+  width: 20.6vw;
+  /* margin: .5vh; */
+  user-select: none;
+}
+
+.container-info-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 58vw;
+  font-family: var(--segoe);
+  font-size: 16px;
+  padding: 16px;
+}
+
+p {
+  text-align: center;
+  width: 60vw;
+}
+
+.red-text {
+  color: var(--red-text);
+  font-size: 1.5vh;
+  font-weight: 500;
+  margin-bottom: 1.5vh;
+}
+
+form,
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+}
+
+label{
+  margin-bottom: 1.5vh;
+  font-weight: bold;
+}
+
+input,
+button {
+  padding: 0;
+}
+
+input {
+  width: calc(59.5vw - 29px);
+  border: 1px solid var(--input-border);
+  padding: 1em;
+  margin: 0 1em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width:59.5vw;
+  background-color: var(--button);
+  color: white;
+  font-family: var(--raleway);
+  border: none;
+  padding: 1vh;
+}
+
+footer {
+  margin: 3em;
+}
+
+.powered {
+  font-size: 1.2vh;
+  font-family: var(--raleway);
+}
+
+a {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper-pics {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+}
