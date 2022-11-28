@@ -12,50 +12,39 @@
   </head>
   <body>
     <header>
-      <div class="left">
-        <span>MY ART</span>
-      </div>
-      <div class="right">
-        <span>About</span>
-      </div>
+      <span>MY ART</span>
+      <span>About</span>
     </header>
 
     <div class="wrapper-pics">
-      <div class="container-pics-left">
+      <div class="container-pics-left flex-col">
         <img draggable="false" src="./images/streetart.jpg" alt="graffiti" />
         <img draggable="false" src="./images/streetart2.jpg" alt="einstein" />
         <img draggable="false" src="./images/streetart5.jpg" alt="heart" />
       </div>
-      <div class="container-pics-right">
+      <div class="container-pics-right flex-col">
         <img draggable="false" src="./images/streetart3.jpg" alt="blue-chair" />
         <img draggable="false" src="./images/streetart4.jpg" alt="bust-with-circle-head" />
       </div>
     </div>
 
-    <div class="wrapper-about-me">
-      <div class="container-about">
-        <h1>About</h1>
-        <img draggable="false" src="./images/boy.jpg" alt="boy" />
-        <div class="container-info-contact">
-          <p>Just me, myself, and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultrices congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultrices congue gravida diam non fringilla.</p>
-          <span class="red-text">Do not hesitate to contact me!</span>
-          <form action="post">
-            <label for="name">Name
-              <input type="text" name="name" id="name" />
-            </label>Email
-            <label for="email">
-              <input type="text" name="email" id="email" />
-            </label>Message
-            <label for="message">
-              <input type="text" name="message id="message" />
-            </label>
-            <button type="submit">Send</button>
-          </form>
-          <footer>
-            <span class="powered">Powered by <a href="#">w3.css</a></span>
-          </footer>
-        </div>
+    <div class="wrapper-about-contact">
+      <div class="container-about flex-col">
+        <span class="about">About</span>
+        <img class="img-about" src="./images/boy.jpg" alt="boy">
+        <span class="bio">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and a interest in lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</span>
+        <span class="red-text">Do not hesitate to contact me!</span>
       </div>
+      <div class="container-form flex-col">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="name">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="name">Message</label>
+        <input type="text" id="message" name="message">
+        <input class="send" type="button" value="Send">
+      </div>
+      <span class="powered">Powered by&nbsp;<a href="#">w3.css</a></span>
     </div>
   </body>
 </html>
