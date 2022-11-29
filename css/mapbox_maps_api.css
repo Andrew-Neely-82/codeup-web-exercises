@@ -2,23 +2,36 @@ body {
   margin: 0;
 }
 
+#map {
+  height: 80vh;
+  width: 100%;
+}
+
 .mapbox-h1 {
   color: blue;
-  text-shadow: 0 0 .5em rgba(0 0 0 / .2);
+  text-shadow: 0 0 0.5em rgba(0 0 0 / 0.2);
 }
 
 .marker {
-  background-image: url('../img/mapbox-icon.png');
-  background-size: cover;
-  width: 50px;
+  width: 37px;
   height: 50px;
-  border-radius: 50%;
+  background-image: url("../img/flat-design-map-pin-transparent-png-stickpng-18.png");
+  background-size: cover;
   cursor: pointer;
 }
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+.mapboxgl-popup-content {
+  border-radius: 1em;
+  z-index: 10;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 2em !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  color: white;
+  background-color: red;
+  overflow: hidden;
+  z-index: 0;
 }
