@@ -1,4 +1,4 @@
-// TODO
+// *DONE
 // Generate a map that shows the city with your favorite restaurant using geocoding.
 mapboxgl.accessToken = "pk.eyJ1IjoiYW5kcmV3bmVlbHkiLCJhIjoiY2xiMm9rZnY2MDZqNDNwcWVxdWZmeHpsdCJ9.uVgP2A2FNPbrYaF1e2C2vw";
 const map = new mapboxgl.Map({
@@ -16,13 +16,49 @@ const map = new mapboxgl.Map({
 // TODO
 // Create a marker on your map of the exact location of your favorite restaurant set the zoom to allow for best viewing distance.
 
-// TODO
+const geojson = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-77.032, 38.913]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Washington, D.C.'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-122.414, 37.776]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'San Francisco, California'
+      }
+    }
+  ]
+};
+
+for (const feature of geojson.features) {
+  // create a HTML element for each feature
+  const el = document.createElement('div');
+  el.className = 'marker';
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+}
+
+// * DONE
 // Create a popup with the name of the restaurant.
-const popup = new mapboxgl.Popup({ closeOnClick: false })
+const popup = new mapboxgl
+.Popup({ closeOnClick: false })
 .setLngLat([-97.74023, 31.12035])
-.setHTML('<h1 class="mapbox-h1">Kebabistan Grill</h1><p class="mapbox-p">Kebabistan Grill is a restaurant located in Killeen, Texas at 1001 East Central Texas Expressway. They are open every day of the week.</p>')
-// .setHTML('<p class="mapbox-p">Kebabistan Grill is a restaurant located in 921 W Veterans Memorial Blvd suite 106, Killeen, TX 76541. They are open every day of the week.</p>')
-.addTo(map);
+.setHTML('<h1 class="mapbox-h1">Kebabistan Grill</h1><p class="mapbox-p">Kebabistan Grill is a restaurant located in Killeen, Texas at 1001 East Central Texas Expressway. They are open every day of the week.</p>').addTo(map);
 
 // TODO
 // Make sure the info window does not display until the marker has been clicked on.
