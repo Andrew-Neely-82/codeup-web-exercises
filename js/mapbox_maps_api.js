@@ -13,7 +13,7 @@ const map = new mapboxgl.Map({
 // Do this by simply changing the value of zoom level where the map properties are initially set and refresh the page to see the changes.
 // Can the zoom be changed programmatically after the initial map is drawn?
 
-// TODO
+// *DONE
 // Create a marker on your map of the exact location of your favorite restaurant set the zoom to allow for best viewing distance.
 
 const geojson = {
@@ -23,22 +23,11 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-77.032, 38.913]
+        coordinates: [-97.74023, 31.12035]
       },
       properties: {
         title: 'Mapbox',
-        description: 'Washington, D.C.'
-      }
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [-122.414, 37.776]
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'San Francisco, California'
+        description: 'Kebabistan Grill'
       }
     }
   ]
