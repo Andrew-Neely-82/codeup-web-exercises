@@ -48,7 +48,7 @@ const restaurants = {
 };
 
 for (const feature of restaurants.features) {
-  // create a HTML element for each feature
+  // create an HTML element for each feature
   const el = document.createElement("div");
   el.className = "marker";
 
