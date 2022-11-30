@@ -1,3 +1,5 @@
+`use strict`;
+
 mapboxgl.accessToken = "pk.eyJ1IjoiYW5kcmV3bmVlbHkiLCJhIjoiY2xiMm9rZnY2MDZqNDNwcWVxdWZmeHpsdCJ9.uVgP2A2FNPbrYaF1e2C2vw";
 const map = new mapboxgl.Map({
   container: "map", // container ID
@@ -5,11 +7,6 @@ const map = new mapboxgl.Map({
   center: [-97.74023, 31.12035], // starting position [lng, lat]
   zoom: 15, // starting zoom
 });
-
-// TODO:
-// Redraw the map of the above location at zoom levels 5, 15, and 20.
-// Do this by simply changing the value of zoom level where the map properties are initially set and refresh the page to see the changes.
-// Can the zoom be changed programmatically after the initial map is drawn?
 
 const restaurants = {
   type: "FeatureCollection",
@@ -69,18 +66,19 @@ $(document).ready(function () {
   });
 });
 
-// Zoom feature
 $(document).ready(() => {
+  // Zoom feature
   $(`.zoom-in`).click(() => {
     map.zoomIn();
   });
   $(`.zoom-out`).click(() => {
     map.zoomOut();
   });
-});
-
-// search feature
-$(document).ready(() => {
+  // remove marker feature
+  $(`.remove-marker`).click(() => {
+    $(`.marker`).remove();
+  });
+  // search feature
   $(`.search`).click(() => {
     const search = $(`.search-input`).val();
     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${search}.json?access_token=${mapboxgl.accessToken}`;
@@ -119,7 +117,12 @@ $(document).ready(() => {
 // * Completed TODO's - Archived * //
 // * =========================== * //
 
-// *DONE
+// * DONE
+// Redraw the map of the above location at zoom levels 5, 15, and 20.
+// Do this by simply changing the value of zoom level where the map properties are initially set and refresh the page to see the changes.
+// Can the zoom be changed programmatically after the initial map is drawn?
+
+// * DONE
 // Generate a map that shows the city with your favorite restaurant using geocoding.
 // mapboxgl.accessToken = "pk.eyJ1IjoiYW5kcmV3bmVlbHkiLCJhIjoiY2xiMm9rZnY2MDZqNDNwcWVxdWZmeHpsdCJ9.uVgP2A2FNPbrYaF1e2C2vw";
 // const map = new mapboxgl.Map({
@@ -129,7 +132,7 @@ $(document).ready(() => {
 //   zoom: 15, // starting zoom
 // });
 
-// *DONE
+// * DONE
 // Create a marker on your map of the exact location of your favorite restaurant set the zoom to allow for best viewing distance.
 
 // * DONE

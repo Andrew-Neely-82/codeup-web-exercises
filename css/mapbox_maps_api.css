@@ -16,9 +16,9 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   height: 70vh;
-  border: none;
+  border: 0.25em solid black;
   border-radius: 1em;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5em rgba(0 0 0 / 0.5);
   margin: 0 10em;
 }
 
@@ -30,10 +30,22 @@ body {
   z-index: 100;
 }
 
-.container-search {
+.zoom-in,
+.zoom-out,
+.remove-marker {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 2.5em;
+  width: 2.5em;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   width: 30vw;
   background-color: #357;
   border-radius: 0.75em;
@@ -44,7 +56,7 @@ body {
 
 .search-input {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
   margin: 0;
@@ -55,12 +67,12 @@ body {
 }
 
 .search {
-  background-color: #234;
+  background-color: #123;
   margin: 0;
 }
 
 .search:hover {
-  background-color: #567;
+  background-color: #234;
 }
 
 button {
