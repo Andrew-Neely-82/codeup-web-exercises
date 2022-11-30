@@ -1,10 +1,77 @@
 body {
+  font-family: sans-serif;
+  background-color: #345;
   margin: 0;
 }
 
+.heading {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+}
+
 #map {
-  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 70vh;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  margin: 0 10em;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  z-index: 100;
+}
+
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  background-color: #357;
+  border-radius: 0.75em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.search-input {
   width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search {
+  background-color: #234;
+  margin: 0;
+}
+
+.search:hover {
+  background-color: #567;
+}
+
+button {
+  background-color: #345;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin: 0.25em 0.5em;
+  cursor: pointer;
+  user-select: none;
 }
 
 .mapbox-h1 {
@@ -20,22 +87,25 @@ body {
 }
 
 .mapboxgl-popup-content {
-  background-color: #345;
   color: white;
-  border-radius: 1em;
+  box-shadow: inset 0 0 0.5em #fff;
+  background-color: #345;
+  border-radius: 4px;
   z-index: 10;
 }
 
 .mapboxgl-popup-close-button {
-  font-size: 2em !important;
+  font-size: 1em !important;
   color: azure;
   overflow: hidden;
   outline: none;
+  margin: 0;
 }
 
 .mapboxgl-popup-close-button:hover {
   color: white;
   background-color: red;
   overflow: hidden;
+  margin: 0;
   z-index: 0;
 }
