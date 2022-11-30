@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  user-select: none;
   z-index: 100;
 }
 
@@ -38,7 +39,7 @@ body {
   align-items: center;
   height: 2.5em;
   width: 2.5em;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 15px;
 }
 
@@ -86,16 +87,20 @@ button {
   user-select: none;
 }
 
-.mapbox-h1 {
+.mapboxgl-popup-content h1 {
   color: lightblue;
 }
 
-.marker {
-  height: 25px;
+.mapboxgl-marker {
+  height: 26px;
   width: 19px;
   background-image: url("../img/flat-design-map-pin-transparent-png-stickpng-18.png");
   background-size: cover;
   cursor: pointer;
+}
+
+.mapboxgl-marker svg {
+  display: none;
 }
 
 .mapboxgl-popup-content {
@@ -120,4 +125,23 @@ button {
   overflow: hidden;
   margin: 0;
   z-index: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #map {
+    height: 70vh;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+  .container-search {
+    width: fit-content;
+    padding: 0;
+    margin: 3.5em auto;
+  }
+  .search-input {
+    width: 80vw;
+  }
 }
