@@ -30,6 +30,17 @@ const geojson = {
         description: "Kebabistan Grill",
       },
     },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-97.72069, 31.09256],
+      },
+      properties: {
+        title: "Mapbox",
+        description: "Panera Bread",
+      },
+    }
   ],
 };
 
