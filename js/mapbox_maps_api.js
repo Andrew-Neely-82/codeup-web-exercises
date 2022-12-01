@@ -1,69 +1,40 @@
 `use strict`;
 
-mapboxgl.accessToken = "pk.eyJ1IjoiYW5kcmV3bmVlbHkiLCJhIjoiY2xiMm9rZnY2MDZqNDNwcWVxdWZmeHpsdCJ9.uVgP2A2FNPbrYaF1e2C2vw";
+//* generates the mapbox map
+mapboxgl.accessToken = mapboxKey;
 const map = new mapboxgl.Map({
-  container: "map", // container ID
-  style: "mapbox://styles/mapbox/streets-v12", // style URL
+  container: "map",
+  style: "mapbox://styles/mapbox/streets-v12",
   center: [-97.74023, 31.12035], // starting position [lng, lat]
   zoom: 15, // starting zoom
 });
 
-const restaurants = {
-  type: "FeatureCollection",
-  features: [
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-97.74023, 31.12035],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Kebabistan Grill",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-97.72069, 31.09256],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Panera Bread",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-97.7013730017652, 31.083025278452553],
-      },
-      properties: {
-        title: "Texas Roadhouse",
-        description: "Texas Roadhouse is a restaurant located in Killeen, Texas at 1001 East Central Texas Expressway. They are open every day of the week.",
-      },
-    },
-  ],
-};
+const restaurants = [
+  {
+    name: "Kebabistan Grill",
+    description: "Kebabistan is a turkish style restaurant",
+    coordinates: [-97.74023, 31.12035],
+    directions: `https://www.google.com/maps/dir/?api=1&destination=Kebabistan+Grill`,
+  },
+  {
+    name: "Panera Bread",
+    description: `Panera Bread serves fresh foods and has a delicious bakery`,
+    coordinates: [-97.72069, 31.09256],
+    directions: `https://www.google.com/maps/dir/?api=1&destination=Panera+Bread`,
+  },
+  {
+    name: "Texas Roadhouse",
+    description: "Texas Roadhouse is a steak and casual american style meal restaurant",
+    coordinates: [-97.7013730017652, 31.083025278452553],
+    directions: `https://www.google.com/maps/dir/?api=1&destination=Texas+Roadhouse`,
+  },
+];
 
-for (const feature of restaurants.features) {
-  // create an HTML element for each feature
-  const el = document.createElement("div");
-  el.className = "marker";
-
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
-}
-
-// TODO:
-// Make sure the info window does not display until the marker has been clicked on.
-
-$(document).ready(function () {
-  $(`.marker`).click(() => {
-    const popup = new mapboxgl.Popup({ closeOnClick: false }).setLngLat([-97.74023, 31.12035]).setHTML('<h1 class="mapbox-h1">Kebabistan Grill</h1><p class="mapbox-p">Kebabistan Grill is a restaurant located in Killeen, Texas at 1001 East Central Texas Expressway. They are open every day of the week.</p>').addTo(map);
-    $(`.mapbox .mapbox-p`).trigger(`mapbox-p`);
-  });
+restaurants.forEach(function (restaurant) {
+  new mapboxgl.Marker()
+    .setLngLat(restaurant.coordinates)
+    .setPopup(new mapboxgl.Popup().setHTML(`<h1>${restaurant.name}</h1><p>${restaurant.description}</p><button class="directions-button"><a href="${restaurant.directions}" target="blank">Directions</a></button>`))
+    .addTo(map);
 });
 
 $(document).ready(() => {
@@ -76,7 +47,7 @@ $(document).ready(() => {
   });
   // remove marker feature
   $(`.remove-marker`).click(() => {
-    $(`.marker`).remove();
+    $(`.mapboxgl-marker`).remove();
   });
   // search feature
   $(`.search`).click(() => {
@@ -99,46 +70,3 @@ $(document).ready(() => {
     }
   });
 });
-
-// TODO:
-// Refactor your code to display at least three of your favorite restaurants with information about each.
-// Create an array of objects with information about each restaurant to accomplish this.
-// Use a .forEach() loop rather than a for loop.
-
-// ? For each below is not working
-
-// restaurants.forEach((restaurant) => {
-//   const el = document.createElement("div");
-//   el.className = "marker";
-//   new mapboxgl.Marker(el).setLngLat(restaurant.geometry.coordinates).addTo(map);
-// });
-
-// * =========================== * //
-// * Completed TODO's - Archived * //
-// * =========================== * //
-
-// * DONE
-// Redraw the map of the above location at zoom levels 5, 15, and 20.
-// Do this by simply changing the value of zoom level where the map properties are initially set and refresh the page to see the changes.
-// Can the zoom be changed programmatically after the initial map is drawn?
-
-// * DONE
-// Generate a map that shows the city with your favorite restaurant using geocoding.
-// mapboxgl.accessToken = "pk.eyJ1IjoiYW5kcmV3bmVlbHkiLCJhIjoiY2xiMm9rZnY2MDZqNDNwcWVxdWZmeHpsdCJ9.uVgP2A2FNPbrYaF1e2C2vw";
-// const map = new mapboxgl.Map({
-//   container: "map", // container ID
-//   style: "mapbox://styles/mapbox/streets-v12", // style URL
-//   center: [-97.74023, 31.12035], // starting position [lng, lat]
-//   zoom: 15, // starting zoom
-// });
-
-// * DONE
-// Create a marker on your map of the exact location of your favorite restaurant set the zoom to allow for best viewing distance.
-
-// * DONE
-// Create a popup with the name of the restaurant.
-
-// const popup = new mapboxgl.Popup({ closeOnClick: false })
-// .setLngLat([-97.74023, 31.12035])
-// .setHTML('<h1 class="mapbox-h1">Kebabistan Grill</h1><p class="mapbox-p">Kebabistan Grill is a restaurant located in Killeen, Texas at 1001 East Central Texas Expressway. They are open every day of the week.</p>')
-// .addTo(map);
