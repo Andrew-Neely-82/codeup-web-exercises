@@ -18,7 +18,7 @@
     $(`h2:nth-of-type(3)`).text(`GO!`);
     // interval to count down the timer
     let timerId = setInterval(() => {
-      timer--;
+      timer--; 
       // music.play;
       $(html.timer).text(timer);
       if (timer === 0) {

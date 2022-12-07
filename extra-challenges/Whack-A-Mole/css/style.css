@@ -19,7 +19,7 @@ body {
 body h1 {
   margin: 0 0 2em 0;
 }
-
+ 
 .game {
   display: flex;
   width: fit-content;
