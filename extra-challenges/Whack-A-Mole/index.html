@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Whack-A-Mole</title>
+  </head>
+  <body>
+    <h1>Whack-A-Mole</h1>
+    <h3>Hit in the center = 10pts</h3>
+    <br />
+    <h3>All others are 1pt</h3>
+    <br />
+    <div class="game">
+      <div class="container-left">
+        <div class="hole hole1"></div>
+        <div class="hole hole2"></div>
+        <div class="hole hole3"></div>
+      </div>
+      <div class="container-middle">
+        <div class="hole hole4"></div>
+        <div class="hole hole5"></div>
+        <div class="hole hole6"></div>
+      </div>
+      <div class="container-right">
+        <div class="hole hole7"></div>
+        <div class="hole hole8"></div>
+        <div class="hole hole9"></div>
+      </div>
+    </div>
+    <div class="container-stuff">
+      <h2>Score: <span class="score-value">0</span></h2>
+      <h2>Timer: <span class="timer-value">0</span></h2>
+      <h2>Ready?</h2>
+      <div class="buttons">
+        <button class="start-btn">Start</button>
+        <button class="restart-btn">Restart</button>
+      </div>
+    </div>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AHEjv-pxUjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
