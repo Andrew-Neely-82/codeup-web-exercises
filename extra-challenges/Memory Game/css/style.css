@@ -1,0 +1,78 @@
+:root {
+  --card-pink: #FFCEC6;
+}
+
+* {
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+  user-select: none;
+}
+
+h1 {
+  padding: 1em 1.5em;
+  margin: 0;
+}
+
+.wrapper-cards {
+  display: flex;
+  margin-left: 2em;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card {
+  height: 8em;
+  width: 5.5em;
+  background-color: white;
+  margin: 1em;
+}
+
+.card-flipped {
+  background-color: var(--card-pink);
+  background-size: 4em;
+}
+
+.coin {
+  background-image: url(https://www.clipartmax.com/png/small/130-1309783_pixel-clipart-mario-mushroom-super-mario-mushroom-pixel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flower {
+  background-image: url(https://www.clipartmax.com/png/small/130-1309783_pixel-clipart-mario-mushroom-super-mario-mushroom-pixel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mushroom {
+  background-image: url(https://www.clipartmax.com/png/small/130-1309783_pixel-clipart-mario-mushroom-super-mario-mushroom-pixel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.one-up {
+  background-image: url(../img/one-up-edited.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.star {
+  background-image: url(https://www.clipartmax.com/png/small/130-1309783_pixel-clipart-mario-mushroom-super-mario-mushroom-pixel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.border {
+  outline: 1em solid orange;
+}
+
+.card,
+.card-flipped {
+  cursor: pointer;
+}
