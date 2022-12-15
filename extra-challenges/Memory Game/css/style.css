@@ -1,5 +1,5 @@
 :root {
-  --card-pink: #FFCEC6;
+  --card-pink: #ffcec6;
 }
 
 * {
@@ -17,12 +17,14 @@ h1 {
 .wrapper-cards {
   display: flex;
   margin-left: 2em;
+  width: max-content;
+  border: 27px solid white;
+  border-image: url(../img/border.png) /* source */ 27 / /* slice */ 36px 28px 18px 8px / /* width */ 18px 14px 9px 4px /* outset */ round;
 }
 
 .container-col {
   display: flex;
   flex-direction: column;
-  
 }
 
 .card {

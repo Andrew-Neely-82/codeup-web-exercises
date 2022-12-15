@@ -52,4 +52,10 @@ $(document).ready(function () {
   $(".card").click(function () {
     $(this).toggleClass("card-flipped");
   });
+
+  // make 2 random card have .coin class
+  var randomCard = $(".card").get(Math.floor(Math.random() * $(".card").length));
+  $(randomCard).addClass("coin");
+  var randomCard2 = $(".card").get(Math.floor(Math.random() * $(".card").length));
+  $(randomCard2).addClass("coin");
 });
