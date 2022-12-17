@@ -263,6 +263,10 @@ svg {
     background-color: var(--orange) !important;
   }
 
+  .navbar-links {
+    user-select: none;
+  }
+
   .wrapper-article {
     display: flex;
     flex-direction: column;
