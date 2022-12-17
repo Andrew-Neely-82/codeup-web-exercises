@@ -31,7 +31,7 @@ h2,
 p,
 span,
 div,
-svg  {
+svg {
   user-select: text;
 }
 
@@ -247,9 +247,32 @@ svg {
   justify-content: center;
   color: var(--dark-gray);
   align-items: center;
-  /* padding: 3em 0; */
+  padding: 0 0 3em 0;
 }
 
 .container-powered a {
   color: var(--dark-gray);
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--orange) !important;
+  }
+
+  .wrapper-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .fa {
+    padding: 0 !important;
+    margin: 64px !important;
+  }
 }
