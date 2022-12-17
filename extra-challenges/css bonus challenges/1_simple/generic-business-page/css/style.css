@@ -21,7 +21,7 @@ a {
 }
 
 h1,
-h2, 
+h2,
 p,
 span {
   user-select: text;
@@ -76,7 +76,6 @@ svg {
 }
 
 .navbar-toggler {
-
 }
 
 .navbar-toggler-icon {
@@ -85,13 +84,12 @@ svg {
 
 /* Start area */
 
-.container-start-page {
+.wrapper-start-page-contents {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 5em 0;
+  background-color: var(--orange);
+  padding: 2.25em 0 0 0;
 }
 
 .container-start-page-contents {
@@ -100,8 +98,7 @@ svg {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--orange);
-  padding: 2.25em 0 0 0;
+  margin: 3em 0;
 }
 
 .container-start-page-contents > h1,
