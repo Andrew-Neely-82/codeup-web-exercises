@@ -1,0 +1,64 @@
+// * font families
+$font-family: (
+  raleway: "Raleway",
+  sans-serif: "sans-serif",
+);
+
+// * font info
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: bold,
+);
+
+// =========================== //
+
+// * flexbox
+// display
+$display: (
+  block: block,
+  flex: flex,
+  inline: inline,
+  inline-block: inline-block,
+  inline-flex: inline-flex,
+  none: none,
+);
+
+// flex-direction
+$flexDir: (
+  row: row,
+  column: column,
+  row-r: row-reverse,
+  col-r: column-reverse,
+  none: none,
+);
+
+// justify-content
+$justifyContent: (
+  center: center,
+  flex-start: flex-start,
+  flex-end: flex-end,
+  space-between: space-between,
+  space-around: space-around,
+  space-evenly: space-evenly,
+  none: none,
+);
+
+// align items
+$alignItems: (
+  center: center,
+  flex-start: flex-start,
+  flex-end: flex-end,
+  space-around: space-around,
+  space-between: space-between,
+  stretch: stretch,
+  none: none,
+);
+
+// flex-wrap
+$flexWrap: (
+  flex-wrap: wrap,
+  nowrap: nowrap,
+  none: none,
+);

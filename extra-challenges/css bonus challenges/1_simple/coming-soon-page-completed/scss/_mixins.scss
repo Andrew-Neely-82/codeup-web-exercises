@@ -1,0 +1,21 @@
+@import "functions";
+
+// * color mixin
+@mixin color($color-name) {
+  color: map-get($color, $color-name);
+}
+
+// * flexbox mixin
+@mixin flexbox($dis, $fDir, $justC, $aI, $wrap) {
+  display: getMap($display, $dis);
+  flex-direction: getMap($flexDir, $fDir);
+  justify-content: getMap($justifyContent, $justC);
+  align-items: getMap($alignItems, $aI);
+  flex-wrap: getMap($flexWrap, $wrap);
+}
+
+// * padding / margin 0 mixin
+@mixin p0M0 {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,61 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: map-get($font-family, raleway), map-get($font-family, sans-serif);
+  font-size: 1.5em;
+  color: white;
+  background-image: url(../forest.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include p0M0;
+}
+
+.container-logo {
+  padding: 26px 0 0 38px;
+}
+
+.logo {
+  font-size: 1.65em;
+}
+
+.container-main-content {
+  @include flexbox(flex, column, center, center, nowrap);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  font-size: 105px;
+  @include p0M0;
+}
+
+.line {
+  width: 296px;
+  margin: 34px 0;
+}
+
+.days {
+  font-weight: 100;
+  font-size: 1.25em;
+}
+
+.container-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 25px;
+  margin: 0 0 24px 38px;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+}

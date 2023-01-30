@@ -1,0 +1,11 @@
+@import "variables";
+
+// * color function
+@function getColor($color-name) {
+  @return map-get($color, $color-name);
+}
+
+// * function for all maps
+@function getMap($map, $value) {
+  @return map-get($map, $value);
+}
