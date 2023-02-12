@@ -1,0 +1,190 @@
+@import "./variables";
+@import "./defaults";
+@import "./mixins";
+
+// * nav bar
+
+.navbar {
+  position: fixed;
+  @include flexbox(flex, row, flex-start, center, nowrap);
+  width: 100%;
+  background-color: map-get($colors, orange);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  @include p0m0;
+
+  .navbar-brand {
+    display: flex;
+    font-size: 20px;
+    background-color: white;
+    color: black !important;
+    padding: 0.5em 1em;
+    margin: 0;
+  }
+}
+
+.navbar-nav {
+  background-color: map-get($colors, orange);
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  color: white !important;
+  padding: 0.5em 1em;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black !important;
+  }
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Start area */
+
+.wrapper-start-page-contents {
+  @include flexbox(flex, row, center, center, 0);
+  background-color: map-get($colors, orange);
+  padding: 2.25em 0 0 0;
+}
+
+.container-start-page-contents {
+  @include flexbox(flex, column, center, center, 0);
+  width: 100%;
+  margin: 4em 0;
+
+  h1 {
+    font-weight: 100;
+    font-family: map-get($font-family, title) !important;
+    margin: 0;
+  }
+}
+
+.container-start-page-contents > h1,
+.container-start-page-contents > span {
+  display: flex;
+  color: white;
+}
+
+.template {
+  margin: 2em 0;
+}
+
+.get-started {
+  background-color: black;
+  font-size: 0.75em;
+  color: white;
+  border: none;
+  padding: 0.75em 2em;
+  user-select: none;
+  &:hover {
+    background-color: map-get($colors, light-gray);
+    color: black;
+  }
+}
+
+/* main content */
+
+.container {
+  @include flexbox(flex, center, center, 0, 0);
+  width: 100% !important;
+  @include p0m0;
+}
+
+.container-fluid {
+  @include flexbox(flex, column, center, center, 0);
+  width: 100%;
+}
+
+.wrapper-article {
+  @include flexbox(flex, row, 0, 0, 0);
+  width: 70%;
+  height: fit-content;
+  margin: 4em 12em;
+
+  h2 {
+    font-family: map-get($font-family, title);
+  }
+}
+
+.container-articles,
+.container-article-p1 {
+  @include flexbox(flex, column, 0, 0, 0);
+}
+
+.container-article-p1 {
+  font-size: 16px;
+
+  p {
+    margin-top: 2em;
+  }
+}
+
+.container-article-p2 {
+  display: flex;
+  color: map-get($colors, text-gray);
+  font-size: 0.5em;
+  margin-top: 2em;
+}
+
+.container-anchor {
+  @include flexbox(flex, row, center, center, 0);
+}
+
+.fa {
+  color: map-get($colors, orange);
+  font-size: 10em;
+}
+
+.fa-anchor {
+  margin-left: 0.25em;
+}
+
+.fa-coffee {
+  margin-right: 0.25em;
+}
+
+/* quote */
+
+.container-quote {
+  @include flexbox(flex, row, center, center, 0);
+  background-color: map-get($colors, dark-gray);
+  color: white;
+  padding: 3em 0;
+}
+
+/* links */
+
+.container-links {
+  @include flexbox(flex, row, center, center, 0);
+  padding: 3em 0;
+
+  svg {
+    height: 20px;
+    width: 20px;
+    fill: map-get($colors, dark-gray);
+    margin: 0 2px;
+  }
+}
+
+.bi-snapchat {
+  fill: map-get($colors, dark-gray) !important;
+}
+
+/* powered by */
+.container-powered {
+  @include flexbox(flex, row, center, center, 0);
+  color: map-get($colors, dark-gray);
+  padding: 0 0 3em 0;
+
+  a {
+    color: map-get($colors, dark-gray);
+  }
+}
+
+@import "./media-queries";

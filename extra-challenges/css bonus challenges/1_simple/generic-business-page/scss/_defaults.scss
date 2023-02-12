@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  box-sizing: border-box;
+  @include p0m0;
+}
+
+html,
+body {
+  font-family: map-get($font-family, primary);
+  font-size: 20px;
+  @include p0m0;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+h1,
+h2,
+p,
+span,
+div,
+svg {
+  user-select: text;
+}
+
+div,
+svg {
+  user-select: none;
+}

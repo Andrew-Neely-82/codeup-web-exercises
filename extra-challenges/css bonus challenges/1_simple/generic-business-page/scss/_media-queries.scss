@@ -1,0 +1,26 @@
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: map-get($colors, orange) !important;
+  }
+
+  .navbar-links {
+    user-select: none;
+  }
+
+  .wrapper-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .fa {
+    padding: 0 !important;
+    margin: 64px !important;
+  }
+}
