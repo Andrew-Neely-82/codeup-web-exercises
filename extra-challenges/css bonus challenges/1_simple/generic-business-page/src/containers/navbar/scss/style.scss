@@ -1,0 +1,30 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+// * nav bar
+
+.Navbar__navbar {
+  position: fixed;
+  @include flexbox(flex, row, flex-start, center, 0);
+  width: 100%;
+  background-color: map-get($colors, orange);
+  @include p0m0;
+
+  .Navbar__home {
+    background-color: white;
+  }
+
+  .Navbar__links {
+    ul {
+      @include flexbox(flex, row, center, center, 0);
+      @include p0m0;
+      li {
+        list-style: none;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+  }
+}
