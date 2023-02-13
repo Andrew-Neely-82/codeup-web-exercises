@@ -1,0 +1,13 @@
+.Socials__container-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0 4em 0;
+}
+.Socials__container-links svg {
+  fill: #666;
+  margin: 0 2px 0 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

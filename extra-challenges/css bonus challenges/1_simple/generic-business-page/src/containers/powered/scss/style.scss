@@ -1,0 +1,15 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.Powered__container-powered {
+  @include flexbox(flex, row, center, center, 0);
+  margin: 0 0 5em 0;
+  span {
+    color: map-get($colors, text-gray);
+    a {
+      color: map-get($colors, text-gray);
+    }
+  }
+}
+
+@import "./media-queries";

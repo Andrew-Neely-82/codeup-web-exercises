@@ -1,0 +1,15 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.Quote__container-quote {
+  @include flexbox(flex, row, center, center, 0);
+  height: 8em;
+  width: 100%;
+  background: map-get($colors, dark-gray);
+  
+  span {
+    color: white;
+  }
+}
+
+@import "./media-queries";

@@ -3,7 +3,7 @@ import "./style.css";
 
 const Quote = () => {
   return (
-    <div class="container-quote">
+    <div class="Quote__container-quote">
       <span>Quote of the day: live life</span>
     </div>
   );

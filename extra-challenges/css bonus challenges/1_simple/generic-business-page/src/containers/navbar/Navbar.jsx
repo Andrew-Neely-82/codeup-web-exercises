@@ -4,7 +4,10 @@ import "./style.css";
 const Navbar = () => {
   return (
     <nav className="Navbar__navbar">
-      <a className="Navbar__home" href="#home">Home</a>
+      <a className="Navbar__home" href="#home">
+        Home
+      </a>
+
       <div class="Navbar__links">
         <ul class="Navbar__navbar-nav">
           <li class="Navbar__nav-item">

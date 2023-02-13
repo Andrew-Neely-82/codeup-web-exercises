@@ -1,0 +1,14 @@
+.Quote__container-quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+  width: 100%;
+  background: #666;
+}
+.Quote__container-quote span {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.Powered__container-powered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5em 0;
+}
+.Powered__container-powered span {
+  color: #757575;
+}
+.Powered__container-powered span a {
+  color: #757575;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -5,14 +5,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <PageStart />
-      <div className="App__main-body">
-        <ArticleOne />
-        <ArticleTwo />
+      <div className="App__page">
+        <PageStart />
+        <div className="App__main-body">
+          <ArticleOne />
+          <ArticleTwo />
+        </div>
+        <Quote />
+        <Socials />
+        <Powered />
       </div>
-      <Quote />
-      <Socials />
-      <Powered />
     </div>
   );
 }

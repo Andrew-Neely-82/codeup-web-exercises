@@ -3,7 +3,7 @@ import "./style.css";
 
 const Powered = () => {
   return (
-    <div class="container-powered">
+    <div class="Powered__container-powered">
       <span>
         Powered by <a href="#">w3.css</a>
       </span>
